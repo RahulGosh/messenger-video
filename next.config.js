@@ -1,20 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone', // or 'export' if you want static export
+  output: "standalone", // or 'export' if you want static export
   experimental: {
     appDir: true,
-    swcPlugins: [
-      ["next-superjson-plugin", {}]
-    ]
+    swcPlugins: [["next-superjson-plugin", {}]],
   },
   images: {
     domains: [
       "res.cloudinary.com",
       "avatars.githubusercontent.com",
-      "lh3.googleusercontent.com"
-    ]
+      "lh3.googleusercontent.com",
+    ],
   },
-    compress: true,
-}
+  compress: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
