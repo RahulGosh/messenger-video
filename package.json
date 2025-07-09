@@ -9,6 +9,12 @@
     "lint": "next lint",
     "postinstall": "prisma generate"
   },
+  "prisma": {
+    "schema": "prisma/schema.prisma",
+    "engineFiles": [
+      "libquery_engine-rhel-openssl-3.0.x.so.node"
+    ]
+  },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@next-auth/prisma-adapter": "^1.0.6",
