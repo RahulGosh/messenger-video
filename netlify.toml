@@ -4,3 +4,8 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[functions]
+  node_bundler = "esbuild"
+  timeout = 30
+  external_node_modules = ["@prisma/client", "@next-auth/prisma-adapter"]
